@@ -31,11 +31,20 @@ a {
   display: none;
 }
 
+/* a text box that wraps content and is 90% of the screen width*/
+.textbox {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0rem;
+  border-radius: 5px;
+}
 
-.centerbutton {
+
+.center_button {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  margin: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -59,12 +68,6 @@ a {
   src: url("./frontpageneue.otf");
 }
 
-/*center everything about this*/
-about__content__images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .about__content__text{
   font-family: "din";
@@ -92,27 +95,6 @@ about__content__images {
   font-size: 5.5rem;
   font-family: "horror";
   text-align: center;
-}
-.abouttext {
-  font-size: 1.5rem;
-  font-family: "din";
-  text-align: center;
-  margin: 0 auto;
-  width: 75%;
-}
-
-
-.teamboxr {
-  padding-right: 5%; 
-}
-
-.teamboxl {
-  padding-left: 5%; 
-}
-
-.bannerImage {
-  width: auto;
-  height: 100%;
 }
 
 .textbox {

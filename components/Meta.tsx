@@ -17,7 +17,7 @@ export default function Meta({ pageTitle }: Props) {
   const description = `${nftName} is an NFT collection.`;
 
   return (
-    <Head>
+    < Head >
       <title>{`${pageTitle} | ${nftName}`}</title>
       <link
         rel="apple-touch-icon"
@@ -62,6 +62,6 @@ export default function Meta({ pageTitle }: Props) {
         name="twitter:site"
         content={process.env.NEXT_PUBLIC_TWITTER_USERNAME}
       />
-    </Head>
+    </Head >
   );
 }

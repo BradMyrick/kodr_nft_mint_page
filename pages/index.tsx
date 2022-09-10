@@ -10,11 +10,11 @@ import { isMobile } from "react-device-detect";
 const Home: NextPage = () => {
   const [hydrated, setHydrated] = React.useState(false);
   React.useEffect(() => {
-      setHydrated(true);
+    setHydrated(true);
   }, []);
   if (!hydrated) {
-      // Returns null on first render, so the client and server match
-      return null;
+    // Returns null on first render, so the client and server match
+    return null;
   }
 
   if (isMobile) {
@@ -23,32 +23,27 @@ const Home: NextPage = () => {
         <Head>
           <title>AI Horror</title>
         </Head>
-      
-        <div className="py-2">
-            <About/>
-        </div>
-  
-        <div className="py-2">
-            <Mint/>
+        <div className="py-2 text-center">
+          <Mint />
         </div>
       </Layout>
     )
-  }else{
-  return (
-    <Layout>
-      <Head>
-        <title>AI Horror</title>
-      </Head>
-    
-      <div className="py-16">
-          <About/>
-      </div>
+  } else {
+    return (
+      <Layout>
+        <Head>
+          <title>AI Horror</title>
+        </Head>
 
-      <div className="py-16">
-          <Mint/>
-      </div>
-    </Layout>
-  )
+        <div className="py-16">
+          <About />
+        </div>
+
+        <div className="py-16">
+          <Mint />
+        </div>
+      </Layout>
+    )
   }
 }
 
