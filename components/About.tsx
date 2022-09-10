@@ -27,7 +27,7 @@ export default function About() {
                     <strong>*0.00666E</strong>
                     <br /><br />
                 </div>
-                <div className="grid gap-1 m-auto p-4 grid-cols-2 grid-rows-2 ... text-white" >
+                <div className="grid gap-1 m-auto justify-center p-4 grid-cols-2 grid-rows-2 ... text-white" >
                 <Image src={HeroImage} alt="Hero Image"/>
                 <Image src={Image1} alt='Image 1'/>
                 <Image src={Image2} alt='Image 2'/>
