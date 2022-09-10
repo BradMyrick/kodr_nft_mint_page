@@ -102,7 +102,20 @@ a {
   margin-bottom: auto;
   padding-top: 1%;
 }
+.centeredImages {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  width: 50%;
+}
 
+.AboutMobile {
+  display: relative;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .CountDown {
 background: none;
@@ -111,5 +124,22 @@ color: white;
 text-align: center;
 font-size: 40px;
 margin: 4px 2px;
+cursor: pointer;
+}
+
+.everythingCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.MobileCountDown {
+background: none;
+border: none;
+color: white;
+text-align: center;
+font-size: 20px;
+margin: auto;
 cursor: pointer;
 }

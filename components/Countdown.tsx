@@ -198,8 +198,8 @@ interface CountdownProps {
     }, [selectedDate, now, completed, yearsLeft, daysLeft, hoursLeft, minutesLeft, secondsLeft, millisecondsLeft, yearsLeftOutput, daysLeftOutput, hoursLeftOutput, minutesLeftOutput, secondsLeftOutput]);
   
     return (
-      <div className="justify-center font-din">
-        <div className="countdown inline-flex m-auto text-red-800">
+      <div className="everythingCentered">
+        <div className="MobileCountDown inline-flex m-auto text-red-800">
           <CountdownBox
             left={timeLeft.days}
             divideBy={daysInSelectedYear}

@@ -5,7 +5,7 @@ import { useMoralis } from 'react-moralis';
 import contractConfig from '../config/contract-config.json';
 
 
-
+  
 const getCurrentYear = () => new Date().getFullYear();
 
 export default function Footer() {
