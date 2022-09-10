@@ -1,13 +1,14 @@
 # NFT React Minting Template by Kodr.eth
 This is a NFT minting website project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This is a stripped down version of a quick mint site I use for clients. It's a simple Next.js app that uses useWeb3ExecuteFunction to interact with my Kodr721a smart contract running on . It's a good starting point for anyone who wants to mint NFTs on for an evm chain using React.
+This is a stripped down version of a quick mint site I use for clients. It's a simple Next.js app that uses useWeb3ExecuteFunction to interact with my Kodr721a smart contract running on any EVM chain. It's a good starting point for anyone who wants to mint NFTs on for an evm chain using React.
 
 ## Getting Started
 
-First, run the development server:
+First, init and run the development server:
 
 ```bash
+npm install
 npm run dev
 ```
 
