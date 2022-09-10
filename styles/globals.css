@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.About {
+  display: absolute;
+  height: auto;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.centerbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@font-face {
+  font-family: "horror";
+  src: url("./HelpMe.ttf");
+}
+
+@font-face {
+  font-family: "din";
+  src: url("./DIN-Medium.otf");
+}
+
+@font-face {
+  font-family: "pagenue";
+  src: url("./frontpageneue.otf");
+}
+
+.bigtext {
+  font-size: 4.5rem;
+  font-family: "horror";
+}
+
+.minttext {
+  font-size: 5.5rem;
+  font-family: "horror";
+  text-align: center;
+}
+
+
+.teamboxr {
+  padding-right: 5%; 
+}
+
+.teamboxl {
+  padding-left: 5%; 
+}
+
+.bannerImage {
+  width: auto;
+  height: 100%;
+}
+
+.textbox {
+  text-align: top;
+  font-size: 1.3rem;
+  padding-top: 0px;
+  font-family: "din";
+  overflow-wrap: break-word;
+}
+
+.rightSideButton {
+  float: right;
+  margin-right: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 1%;
+}
+
+
+.CountDown {
+background: none;
+border: none;
+color: white;
+text-align: center;
+font-size: 40px;
+margin: 4px 2px;
+cursor: pointer;
+}

@@ -1,0 +1,29 @@
+{
+    "contractName": "Kodr721a",
+    "marketLink": "https://opensea.io/collection/ai_horror_nights",
+    "contractAddress": "0x5Cd60bB4d5469106aCE8ebC2D35E5c329d3fB6dD",
+    "nftName": "AI Horror Nights",
+    "nftSymbol": "AIHN",
+    "maxSupply": "1000",
+    "saleType": {
+        "publicSale": {
+            "mintPrice": "0.00666",
+            "maxMintAmountPerTx": "4"
+        }
+    },
+    "contractAddresses": {
+        "5": ["0x5Cd60bB4d5469106aCE8ebC2D35E5c329d3fB6dD"],
+        "1": [""]
+    },
+    "customErrors": {
+        "MyNftCollection__InvalidMintAmount": "Invalid mint amount!",
+        "MyNftCollection__MaxSupplyExceeded": "Max supply exceeded!",
+        "MyNftCollection__InsufficientFunds": "Insufficient funds!",
+        "MyNftCollection__AddressAlreadyClaimed": "Address already claimed 2!",
+        "MyNftCollection__InvalidProof": "Invalid proof!",
+        "MyNftCollection__PublicSaleClosed": "Public sale closed!",
+        "MyNftCollection__TransferFailed": "Transfer failed!",
+        "MyNftCollection__NonexistentToken": "Nonexistent token!"
+    },
+    "gasToken": "ETH"
+}
