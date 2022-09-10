@@ -14,9 +14,9 @@ export default function Header() {
     }
   if (isMobile) {
     return (
-      <div className="sticky top-4 h-auto bg-none z-10">
+      <div className="sticky top-auto h-auto bg-none z-10">
         <nav className="relative w-auto justify-center">
-          <div className="centerbutton">
+          <div className="centerbutton mt-4">
             <ConnectButton />
           </div>
         </nav>

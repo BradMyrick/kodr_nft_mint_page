@@ -13,7 +13,7 @@ export default function Meta({ pageTitle }: Props) {
   const ogType = router.pathname === '/' ? 'website' : 'article';
   const ogTitle = pageTitle
     ? pageTitle
-    : 'Kodr Minting Template'; //todo: update users title
+    : 'Mint by KODR'; //todo: update users title
   const description = `${nftName} is an NFT collection.`;
 
   return (

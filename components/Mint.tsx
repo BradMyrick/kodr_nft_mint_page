@@ -173,17 +173,10 @@ export default function Mint() {
       });
     }
   }
-  const [hydrated, setHydrated] = React.useState(false);
-  React.useEffect(() => {
-    setHydrated(true);
-  }, []);
-  if (!hydrated) {
-    // Returns null on first render, so the client and server match
-    return null;
-  }
+
   if (isMobile) {
     return (
-      <div className="mint w-max mx-auto">
+      <div className="mint w-max mx-auto mt-0">
         <h2 className="minttext"><strong>Mint</strong></h2>
         {isSuccess ? (
           <div className="border-8 rounded-3xl border-r-gray-300 border-t-gray-300 border-l-gray-300 border-b-gray-300 bg-black p-8">
