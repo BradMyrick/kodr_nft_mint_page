@@ -12,13 +12,12 @@ import type {
 import type { TIconType } from '@web3uikit/icons/dist/lib/';
 import React from 'react';
 import { Countdown, MobileCountdown } from './Countdown';
-import { useMediaQuery } from 'react-responsive'
+import { isMobile } from "react-device-detect";
 type CustomErrors = {
     [key: string]: string;
 };
 
 export default function Mint() {
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const [isSuccess, setIsSuccess] = useState(false);
     const { saleType, gasToken, customErrors } = contractConfig;
     const contractAddress = contractConfig.contractAddress;
@@ -39,7 +38,7 @@ export default function Mint() {
       fetch: publicMint,
       isFetching: isFetchingPM,
       isLoading: isLoadingPM,
-    } = C({
+    } = useWeb3ExecuteFunction({
       abi: ABI,
       contractAddress: contractAddress,
       functionName: 'mint',

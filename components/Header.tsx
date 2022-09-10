@@ -1,14 +1,21 @@
 import React from 'react';
 import { ConnectButton } from 'web3uikit';
-import { useMediaQuery } from 'react-responsive'
+import { isMobile } from "react-device-detect";
 
 
 export default function Header() {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const [hydrated, setHydrated] = React.useState(false);
+    React.useEffect(() => {
+      setHydrated(true);
+    }, []);
+    if (!hydrated) {
+      // Returns null on first render, so the client and server match
+      return null;
+    }
   if (isMobile) {
     return (
-      <div className="sticky top-4 h-auto bg-transparent z-10">
-        <nav className="relative w-90% justify-center">
+      <div className="sticky top-4 h-auto bg-none z-10">
+        <nav className="relative w-auto justify-center">
           <div className="centerbutton">
             <ConnectButton />
           </div>

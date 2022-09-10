@@ -8,8 +8,6 @@ import { useState } from 'react';
 
 
 const Home: NextPage = () => {
-
-
   return (
     <Layout>
       <Head>

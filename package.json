@@ -20,9 +20,9 @@
     "next-auth": "^4.10.3",
     "npm-clean": "^1.0.3",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
     "react-moralis": "^1.4.1",
-    "react-responsive": "^9.0.0-beta.10",
     "wagmi": "^0.6.4",
     "web3uikit": "^0.1.163"
   },
